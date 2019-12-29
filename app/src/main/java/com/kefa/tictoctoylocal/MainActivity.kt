@@ -1,5 +1,6 @@
 package com.kefa.tictoctoylocal
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     protected fun buclick(view: View) {
-        val buSelected = view as Button
+        val buSelected:Button = view as Button
         var cellId = 0
         when (buSelected.id) {
             R.id.bu1 -> cellId = 1
@@ -30,5 +31,25 @@ class MainActivity : AppCompatActivity() {
             R.id.bu9 -> cellId = 9
         }
         Toast.makeText(this, "ID:" + cellId, Toast.LENGTH_LONG).show()
+    }
+    var player1=ArrayList<Int>()
+    var player2=ArrayList<Int>()
+    var Activeplayer=1
+
+    fun PlayGame(cellId:Int,buselected: Button){
+
+         if (Activeplayer==1){
+            buselected.text = "X"
+            buselected.setBackgroundColor(Color.GREEN)
+             player1.add(cellId)
+             Activeplayer=2
+        }else{
+             buselected.text = "0"
+             buselected.setBackgroundColor(Color.BLUE)
+             player2.add(cellId)
+             Activeplayer=1
+         }
+
+        buselected.isEnabled=false
     }
 }
