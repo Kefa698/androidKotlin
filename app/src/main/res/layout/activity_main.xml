@@ -2,17 +2,20 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
+    android:background="@color/chocolate"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TableRow
+        android:layout_marginBottom="3pt"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu1"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -20,6 +23,7 @@
             android:onClick="buclick" />
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu2"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -27,6 +31,7 @@
             android:onClick="buclick" />
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu3"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -35,11 +40,13 @@
     </TableRow>
 
     <TableRow
+        android:layout_marginBottom="3pt"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu4"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -47,6 +54,7 @@
             android:onClick="buclick" />
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu5"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -54,6 +62,7 @@
             android:onClick="buclick" />
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu6"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -67,6 +76,7 @@
         android:layout_height="match_parent">
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu7"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -74,6 +84,7 @@
             android:onClick="buclick" />
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu8"
             android:layout_width="40pt"
             android:layout_height="40pt"
@@ -81,6 +92,7 @@
             android:onClick="buclick" />
 
         <Button
+            android:background="@color/ghost_white"
             android:id="@+id/bu9"
             android:layout_width="40pt"
             android:layout_height="40pt"
